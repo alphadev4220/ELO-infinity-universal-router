@@ -12,7 +12,7 @@ import {RouterParameters} from "../../../src/base/RouterImmutables.sol";
  */
 contract DeployElo is DeployUniversalRouter {
     function getDeploymentSalt() public pure override returns (bytes32) {
-        return keccak256("INFINITY-UNIVERSAL-ROUTER/UniversalRouter/ELO/1.0.0");
+        return keccak256("INFINITY-UNIVERSAL-ROUTER/UniversalRouter/ELO/2.0.0");
     }
 
     function getCreate3Factory() public pure override returns (address) {
@@ -34,7 +34,7 @@ contract DeployElo is DeployUniversalRouter {
             infiClPoolManager: 0x91420c74F23055e5CfDf3661E0F9171d342023eD,
             infiBinPoolManager: 0xfb8F9059302b67B20863eC5665CEBFE2E4a50b5F,
             v3NFTPositionManager: address(0),
-            infiClPositionManager: 0xEDf5ece27677847FB3B5e2a2733036A1d36B237D,
+            infiClPositionManager: 0x56AdF8c4FE843b3F2a7580a274b104a2bcD04D5A,
             infiBinPositionManager: 0x464f63C82Bbea313081C00ee77433cCDAA097928
         });
 
